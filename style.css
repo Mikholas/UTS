@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .banner {
+    height: 50vh;
+    background: url('../img/banner.jpg') no-repeat center center/cover;
+  }
+  
+  #features ul {
+    list-style: disc;
+    padding-left: 20px;
+  }
+  
+  table {
+    margin-top: 20px;
+  }
+  
+  section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+/* Animasi Fade-In */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .banner, #about, #features, #pricing, #register {
+    animation: fadeIn 1.5s ease-in;
+  }
+  
+  /* Efek Hover pada Tombol */
+  .btn-primary:hover {
+    background-color: #0056b3;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Responsif untuk Mobile */
+  @media (max-width: 768px) {
+    .banner {
+      height: 60vh;
+    }
+    
+    .banner h1 {
+      font-size: 1.8rem;
+    }
+  
+    #features ul {
+      padding-left: 10px;
+    }
+  
+    table {
+      font-size: 0.9rem;
+    }
+  }
+  

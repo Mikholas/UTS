@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelApp - Solusi Perjalanan Anda</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">TravelApp</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+        <li class="nav-item"><a class="nav-link" href="#features">Fitur</a></li>
+        <li class="nav-item"><a class="nav-link" href="#pricing">Harga</a></li>
+        <li class="nav-item"><a class="nav-link" href="#register">Daftar</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- Banner -->
+  <header class="banner text-center text-light d-flex align-items-center" style="background-image: url('img/banner.jpg');">
+    <div class="container">
+      <h1>Selamat Datang di TravelApp</h1>
+      <p>Temukan penginapan terbaik, aktivitas seru, dan perjalanan tak terlupakan bersama kami.</p>
+    </div>
+</header>
+  
+  <!-- About Section -->
+  <section id="about" class="py-5 text-center">
+    <div class="container">
+      <h2>Tentang Aplikasi Kami</h2>
+      <img src="img/logotravel.png" alt="Logo TravelApp" width="100" class="mb-4">
+      <p>TravelApp membantu Anda menemukan penginapan dan aktivitas terbaik di berbagai destinasi wisata. Nikmati pengalaman perjalanan yang tak terlupakan dengan berbagai fitur menarik.</p>
+      <video controls width="100%" class="my-4">
+        <source src="video/vd15mb.mp4" type="video/mp4">
+        Browser Anda tidak mendukung pemutaran video ini.
+    </video>    
+    </div>
+</section>
+
+  
+  <!-- Features Section -->
+  <section id="features" class="py-5 bg-light">
+    <div class="container">
+      <h2>Fitur Utama</h2>
+      <ul>
+        <li>Pencarian Penginapan dan Tiket</li>
+        <li>Diskon Khusus dan Paket Liburan</li>
+        <li>Pencarian Aktivitas Lokal</li>
+        <li>Ulasan dan Rekomendasi Pengguna</li>
+      </ul>
+      <button id="addFeatureBtn" class="btn btn-primary mt-3">Tambah Fitur Lainnya</button>
+    </div>
+  </section>
+  
+  <!-- Pricing Table Section -->
+  <section id="pricing" class="py-5 text-center">
+    <div class="container">
+      <h2>Paket Berlangganan</h2>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Paket</th>
+            <th>Harga</th>
+            <th>Fitur</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Gratis</td>
+            <td>Rp 0</td>
+            <td>Akses Terbatas</td>
+          </tr>
+          <tr>
+            <td>Basic</td>
+            <td>Rp 100.000</td>
+            <td>Diskon & Akses Tambahan</td>
+          </tr>
+          <tr>
+            <td>Premium</td>
+            <td>Rp 250.000</td>
+            <td>Akses Penuh & Promo Eksklusif</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  
+  <!-- Registration Form -->
+  <section id="register" class="py-5">
+    <div class="container">
+      <h2>Daftar Sekarang</h2>
+      <form id="registerForm">
+        <div class="form-group">
+          <label for="name">Nama:</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" class="form-control" id="password" required>
+        </div>
+        <div class="form-group">
+          <label for="package">Pilih Paket:</label>
+          <select class="form-control" id="package">
+            <option value="basic">Basic</option>
+            <option value="premium">Premium</option>
+          </select>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="terms" required>
+          <label for="terms" class="form-check-label">Saya menyetujui syarat & ketentuan</label>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Daftar</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
